@@ -1,0 +1,197 @@
+.parallel_section {
+    display: flex; /* Use flexbox to create a horizontal layout */
+    flex-direction: column; /* Display the sections in a column layout */
+    justify-content: flex-start; /* Align sections to the top */
+    align-items: stretch; /* Stretch sections to occupy full width */
+  
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #c9c67c;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #c9c67c;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c9c67c;
+  
+    margin-left: 35px;
+    margin-right: 35px;
+
+    padding-top: 5px;
+    padding-bottom: 12px;
+    position: relative; /* Set the parent container to a relative position */
+}
+
+.section_name_parallel_section::before,
+.section_name_parallel_section::after {
+  content: ""; /* Add content to the pseudo-element */
+  position: absolute; /* Set the pseudo-element to an absolute position */
+  top: 50%; /* Position the pseudo-element vertically in the middle */
+  left: 0; /* Position the pseudo-element at the left edge */
+  right: 0; /* Position the pseudo-element at the right edge */
+  height: 1px; /* Set the height of the line */
+  background-color: #c9c67c; /* Set the color of the line */
+  z-index: -1; /* Move the line behind the text */
+}
+
+.section_name_parallel_section::before {
+  left: 0;
+  right: calc(58%); /* Adjust the value to prevent crossing */
+}
+
+.section_name_parallel_section::after {
+  left: calc(58%); /* Adjust the value to prevent crossing */
+  right: 0;
+}
+
+.section_name_parallel_section {
+  position: relative; /* Set the element to a relative position */
+  text-align: center;
+  font-family: Arial, Sans-Serif;
+  color: #4C4E4D;
+  font-size: 27px;
+  font-style: italic;
+}
+
+.split_container_parallel_section {
+  display: flex;
+}
+
+.split_left_parallel_section {
+  width: 50%; /* Set the width of the left section */
+  border-right: 1px solid #c9c67c; /* Add a border in between */
+  padding: 0 10px; /* Add some padding for spacing */
+}
+
+.areaA_parallel_section {
+  display: flex; /* Use flexbox to create a horizontal layout */
+  align-items: stretch; /* Stretch sections to occupy full width */
+  margin:5px;
+
+  border-top: 1px solid #c9c67c;
+
+  max-width: 600px; /* Set the maximum width */
+  max-height: 250px; /* Set the maximum height */
+  background-color: #F6F6F6;
+}
+
+.areaA_text_parallel_section {
+  flex: 1; /* Occupy half of the width */
+  border-right-width: 1px;
+  position: relative; /* Set the container as a positioning context */
+  
+  max-width: 200px; /* Set the maximum width */
+  max-height: 250px; /* Set the maximum height */
+  padding: 3px;
+}
+
+.areaA_text_parallel_section .subtitle_parallel_section{
+  position: absolute; /* Position the subtitle absolutely */
+  bottom: 5px; /* Adjust the value as needed for desired spacing */
+}
+
+.areaA_image_parallel_section {
+  flex: 1; /* Occupy half of the width */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.areaB_and_C_container_parallel_section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px; /* Set the maximum width */
+  max-height: 850px; /* Set the maximum height */
+}
+
+.areaB_parallel_section {
+  border-top: 1px solid #c9c67c;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  max-width: 200px; /* Set the maximum width */
+  max-height: 850px; /* Set the maximum height */
+  background-color: #F6F6F6;
+}
+
+.areaB_text_parallel_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.areaB_image_parallel_section {
+  width: 100%; /* Add this line */
+  height: 100%; /* Set the desired height here */
+  object-fit: cover; /* Adjust the image display style */
+}
+
+.areaC_parallel_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute items evenly along the vertical axis */
+  height: 100%; /* Ensure the container takes up the full height */
+  width: 100%;
+  height: 305px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.areaC_1_parallel_section,
+.areaC_2_parallel_section {
+  margin-bottom: 8px; /* Add padding to create space around the content */
+}
+
+.areaC_1_parallel_section,
+.areaC_2_parallel_section,
+.areaC_3_parallel_section {
+  border-top: 1px solid #c9c67c;
+  flex: 1; /* Distribute the available space equally among the three items */
+  height: 100px;
+  background-color: #F6F6F6;
+  display: flex; /* Use flexbox to create a horizontal layout */
+  flex-direction: column; /* Display the sections in a column layout */
+  justify-content: flex-start; /* Align sections to the bottom */
+}
+
+.areaA_parallel_section:hover,
+.areaB_parallel_section:hover,
+.areaC_1_parallel_section:hover,
+.areaC_2_parallel_section:hover,
+.areaC_3_parallel_section:hover {
+  filter: brightness(95%);
+}
+
+.areaC_parallel_section .subtitle_parallel_section {
+  justify-content: flex-start; /* Align the subtitle to the top */
+}
+
+.split_right_parallel_section {
+  width: 50%; /* Set the width of the right section */
+  padding: 0 10px; /* Add some padding for spacing */
+}
+
+.image_parallel_section {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title_parallel_section {
+  font-family: Arial, Sans-Serif;
+  color: black;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.subtitle_parallel_section {
+  font-family: "Gill Sans", sans-serif;
+  color: #4C4E4D;
+  font-size: 14px;
+}
+
+.category_parallel_section {
+  font-family: "Gill Sans", sans-serif;
+  color: #4C4E4D;
+  font-size: 25px;
+}

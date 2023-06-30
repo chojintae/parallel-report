@@ -1,0 +1,176 @@
+.top_stories {
+    display: flex; /* Use flexbox to create a horizontal layout */
+    flex-direction: row; /* Display the sections in a column layout */
+    justify-content: flex-start; /* Align sections to the top */
+    align-items: stretch; /* Stretch sections to occupy full width */
+  
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #c9c67c;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #c9c67c;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c9c67c;
+  
+    margin-left: 35px;
+    margin-right: 35px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative; /* Set the parent container to a relative position */
+}
+
+.side_bar_top_stories {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  flex-direction: column;
+  width: 17%; /* Set the width of the sidebar */
+  border-right: 1px solid #c9c67c; /* Add a border on the right side */
+  display: flex; /* Add display:flex to enable flexbox layout */
+  justify-content: space-between; /* Align items at the top and bottom */
+  align-items: flex-start; /* Align items to the left */
+}
+
+.side_bar_top_stories .side_bar_title{
+  color: #4C4E4D;
+  font-size: 30px;
+  display: flex;
+}
+
+.side_bar_top_stories .side_bar_options{
+  border-left: 1px solid #c9c67c;
+  border-top: 1px solid #c9c67c;
+  padding: 3px;
+  color: #4C4E4D;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column; /* Change the direction to column */
+  align-items: flex-start; /* Align options to the left */
+  margin-top: auto; /* Push options to the bottom */
+}
+
+.articles_area_top_stories {
+  flex: 1; /* Add flex: 1 to make the articles area occupy remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+.areaA_and_B_container_top_stories {
+  margin-left: 12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.areaA_top_stories{
+  width: 65%; /* Set the width of the left section */
+  border-top: 1px solid #c9c67c; /* Add a border in between */
+  padding-left: 10px; /* Add some padding for spacing */
+}
+
+.areaA_top_stories {
+  display: flex; /* Use flexbox to create a horizontal layout */
+  align-items: stretch; /* Stretch sections to occupy full width */
+  margin:5px;
+
+  max-width: 1500px; /* Set the maximum width */
+  max-height: 750px; /* Set the maximum height */
+  background-color: #F6F6F6;
+}
+
+.areaA_text_top_stories {
+  flex: 1; /* Occupy half of the width */
+  border-right-width: 1px;
+  position: relative; /* Set the container as a positioning context */
+  
+  max-width: 200px; /* Set the maximum width */
+  max-height: 250px; /* Set the maximum height */
+  padding: 3px;
+}
+
+.areaA_text_top_stories .subtitle_top_stories {
+  position: absolute; /* Position the subtitle absolutely */
+  bottom: 5px; /* Adjust the value as needed for desired spacing */
+}
+
+.areaA_image_top_stories {
+  flex: 1; /* Occupy half of the width */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.areaB_top_stories {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  max-width: 200px; /* Set the maximum width */
+  max-height: 850px; /* Set the maximum height */
+  background-color: #F6F6F6;
+}
+
+.areaB_text_parallel_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.areaB_image_parallel_section {
+  width: 100%; /* Add this line */
+  height: 100%; /* Set the desired height here */
+  object-fit: cover; /* Adjust the image display style */
+}
+
+.areaC_D_and_E_container_top_stories {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px; /* Set the maximum width */
+  max-height: 850px; /* Set the maximum height */
+}
+
+.areaC_text_top_stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.areaC_image_top_stories {
+  width: 100%; /* Add this line */
+  height: 100%; /* Set the desired height here */
+  object-fit: cover; /* Adjust the image display style */
+}
+
+.areaC_top_stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute items evenly along the vertical axis */
+  height: 100%; /* Ensure the container takes up the full height */
+  width: 100%;
+  height: 305px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.areaA_top_stories:hover,
+.areaB_top_stories:hover,
+.areaC_top_stories:hover,
+.areaD_1_top_stories:hover,
+.areaD_2_top_stories:hover,
+.areaD_3_top_stories:hover,
+.areaE_1_top_stories:hover,
+.areaE_2_top_stories:hover,
+.areaE_3_top_stories:hover,
+.areaE_4_top_stories:hover,
+.areaE_5_top_stories:hover {
+  filter: brightness(95%);
+}
+
+.image_top_stories {
+  max-width: 100%;
+  max-height: 100%;
+}
+
